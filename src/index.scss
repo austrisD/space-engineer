@@ -1,0 +1,15 @@
+@import "/node_modules/normalize.css/normalize.css";
+
+.planetView {
+  background-image: url("./assets/images/movingBg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.PlanetBlank {
+  position: absolute;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
