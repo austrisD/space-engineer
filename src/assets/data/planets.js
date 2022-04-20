@@ -1,15 +1,15 @@
-import skaoul from "../images/planet/skaoul.png";
-import Asuras from "../images/planet/Asuras.png";
-import BlackHole from "../images/planet/BlackHole.png";
-import moon from "../images/planet/moon.png";
-import orionStar from "../images/planet/orionStar.png";
-import overwant from "../images/planet/overwant.png";
-import pertam from "../images/planet/pertam.png";
-import satreus from "../images/planet/satreus.png";
-import telos from "../images/planet/telos.png";
-import teralis from "../images/planet/teralis.png";
-import terraEarth from "../images/planet/terra-earth.png";
-import triton from "../images/planet/triton.png";
+import skaoul from "../planets/skaoul.png";
+import Asuras from "../planets/Asuras.png";
+import BlackHole from "../planets/BlackHole.png";
+import moon from "../planets/moon.png";
+import orionStar from "../planets/orionStar.png";
+import overwant from "../planets/overwant.png";
+import pertam from "../planets/pertam.png";
+import satreus from "../planets/satreus.png";
+import telos from "../planets/telos.png";
+import teralis from "../planets/teralis.png";
+import terraEarth from "../planets/terra-earth.png";
+import triton from "../planets/triton.png";
 
 export const Planets = [
   {
@@ -58,68 +58,68 @@ export const Planets = [
     atmosphere: 1,
     distanceFromCenter: 3565373.22304356,
   },
-  {
-    name: "Terra",
-    PlanetSize: 120000,
-    planetImage: terraEarth,
-    Coordinates: {
-      X: 54715353.7894947,
-      Y: 60441332.7730428,
-      Z: 57532362.5419378,
-    },
-    images: [],
-    descriptions: "",
-    gravity: 1,
-    atmosphere: 0.9,
-    distanceFromCenter: 99841273.2504755,
-  },
-  {
-    name: "Orion Star",
-    PlanetSize: 120000,
-    planetImage: orionStar,
-    Coordinates: {
-      X: 57735037.1159113,
-      Y: 57735037.1159113,
-      Z: 57735035.7378781,
-    },
-    images: [],
-    descriptions: "Dont get closer to 2000km you ship gonna burn!!!",
-    gravity: 10000,
-    atmosphere: "inferno",
-    distanceFromCenter: 100058014.789451,
-  },
-  {
-    name: "Overvent gas's giant",
-    PlanetSize: 120000,
-    planetImage: overwant,
-    Coordinates: {
-      X: 60623743.5380148,
-      Y: 60179741.4099456,
-      Z: 59205544.5347331,
-    },
-    images: [],
-    descriptions:
-      "Gass giant with 550 000 km asteroid belt.Attempt to land on planet is not advised",
-    gravity: 6.4,
-    atmosphere: 4,
-    distanceFromCenter: 103982735.033006,
-  },
-  {
-    name: "Satreus",
-    PlanetSize: 120000,
-    planetImage: satreus,
-    Coordinates: {
-      X: 61262096.4426619,
-      Y: 55772195.8498396,
-      Z: 58171735.4857459,
-    },
-    images: [],
-    descriptions:
-      "Abandoned dessert planet by civilization, ruled by guns and violence",
-    gravity: 0.95,
-    atmosphere: 1,
-    distanceFromCenter: 101275989.58178,
-  },
+  // {
+  //   name: "Terra",
+  //   PlanetSize: 120000,
+  //   planetImage: terraEarth,
+  //   Coordinates: {
+  //     X: 54715353.7894947,
+  //     Y: 60441332.7730428,
+  //     Z: 57532362.5419378,
+  //   },
+  //   images: [],
+  //   descriptions: "",
+  //   gravity: 1,
+  //   atmosphere: 0.9,
+  //   distanceFromCenter: 99841273.2504755,
+  // },
+  // {
+  //   name: "Orion Star",
+  //   PlanetSize: 120000,
+  //   planetImage: orionStar,
+  //   Coordinates: {
+  //     X: 57735037.1159113,
+  //     Y: 57735037.1159113,
+  //     Z: 57735035.7378781,
+  //   },
+  //   images: [],
+  //   descriptions: "Dont get closer to 2000km you ship gonna burn!!!",
+  //   gravity: 10000,
+  //   atmosphere: "inferno",
+  //   distanceFromCenter: 100058014.789451,
+  // },
+  // {
+  //   name: "Overvent gas's giant",
+  //   PlanetSize: 120000,
+  //   planetImage: overwant,
+  //   Coordinates: {
+  //     X: 60623743.5380148,
+  //     Y: 60179741.4099456,
+  //     Z: 59205544.5347331,
+  //   },
+  //   images: [],
+  //   descriptions:
+  //     "Gass giant with 550 000 km asteroid belt.Attempt to land on planet is not advised",
+  //   gravity: 6.4,
+  //   atmosphere: 4,
+  //   distanceFromCenter: 103982735.033006,
+  // },
+  // {
+  //   name: "Satreus",
+  //   PlanetSize: 120000,
+  //   planetImage: satreus,
+  //   Coordinates: {
+  //     X: 61262096.4426619,
+  //     Y: 55772195.8498396,
+  //     Z: 58171735.4857459,
+  //   },
+  //   images: [],
+  //   descriptions:
+  //     "Abandoned dessert planet by civilization, ruled by guns and violence",
+  //   gravity: 0.95,
+  //   atmosphere: 1,
+  //   distanceFromCenter: 101275989.58178,
+  // },
   {
     name: "Moon",
     PlanetSize: 20000,
@@ -156,9 +156,9 @@ export const Planets = [
     PlanetSize: 60000,
     planetImage: triton,
     Coordinates: {
-      X: -613451.922492568,
-      Y: 1906932.05395879,
-      Z: 1164492.47195727,
+      X: "-613451.92249256757",
+      Y: "1906932.0539587883",
+      Z: "1164492.4719572705",
     },
     images: [],
     descriptions: "Icy planed deserted by civilization rule by player faction",
@@ -180,6 +180,21 @@ export const Planets = [
     gravity: 50,
     atmosphere: 0,
     distanceFromCenter: 2366269.37425075,
+  },
+  {
+    name: "Black Hole",
+    PlanetSize: 120000,
+    planetImage: BlackHole,
+    Coordinates: {
+      X: 0,
+      Y: 0,
+      Z: 0,
+    },
+    images: [],
+    descriptions: "",
+    gravity: "too much for human mind to comprehend",
+    atmosphere: 0,
+    distanceFromCenter: 0,
   },
 ];
 
@@ -216,7 +231,5 @@ export const factions = [
     planets: [],
   },
 ];
-
-
 
 ///copy format  "GPS:eric base:-122318.79:1837212.27:450689.07:#FF75C9F1:"

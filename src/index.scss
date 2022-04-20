@@ -1,15 +1,52 @@
 @import "/node_modules/normalize.css/normalize.css";
 
 .planetView {
+  display: flex;
   background-image: url("./assets/images/movingBg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
 }
+
 .PlanetBlank {
-  position: absolute;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.planetElement {
+  position: absolute;
+  display: block;
+  height: fit-content;  
+  .PlanetHover {
+    display: none;
+    position: absolute;
+    margin-top: -100%;
+
+
+    .planetSVG {
+      position: relative;
+      z-index: 2;
+    }
+    .PlanetBasicInfo {
+      color: #82cad3;
+      margin-top: -60px;
+      padding-left: 10px;
+      font-size: 20px;
+      .planetName {
+        font-size: 40px;
+        margin: 0;
+      }
+      li {
+        display: flex;
+        flex-direction: row;
+        .planetInfoTag {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
